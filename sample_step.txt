@@ -1,0 +1,15 @@
+docker compose -f docker-compose.yml build 
+
+docker compose -f docker-compose.yml up -d
+
+
+
+docker exec -it ollama-container ollama pull gpt-oss:20b
+
+curl -X 'POST' \
+    'http://localhost:8000/chat' \
+    -H 'accept: application/json' \
+    -H 'Content-Type: application/json' \
+    -d '{
+        'prompt':''
+    }

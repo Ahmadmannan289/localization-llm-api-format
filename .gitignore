@@ -20,3 +20,5 @@
 *.suo
 *.user
 *.cache
+/app/__pycache__/
+/tests/__pycache__/

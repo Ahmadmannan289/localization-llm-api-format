@@ -4,7 +4,7 @@ docker compose -f docker-compose.yml up -d
 
 
 
-docker exec -it ollama-container ollama pull gpt-oss:20b
+docker exec -it ollama-container ollama pull gpt-oss:20b ### use the specified mode u need to download here
 
 curl -X 'POST' \
     'http://localhost:8000/chat' \

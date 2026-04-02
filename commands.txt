@@ -1,0 +1,10 @@
+### to check the logs
+docker logs ollama-container
+docker logs fastapi-ollama-container
+
+### verify the model pulled
+docker exec -it ollama-container ollama list
+
+
+### test ur ui 
+http://localhost:8000/docs

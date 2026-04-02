@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 
 class ChatRequest(BaseModel):
     prompt: str
-    model: str = "llama3.2:3b"  # Changed to a smaller, more compatible model
+    model: str = "qwen3.5:0.8b"  # Changed to a smaller, more compatible model llama3.2:3b
 
 @app.post("/chat")
 async def chat_with_ollama(request_data: ChatRequest):
